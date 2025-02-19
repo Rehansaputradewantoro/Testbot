@@ -919,7 +919,7 @@ class SmartBot:
 
         # Check for errors in the transaction
         if "error" in data["result"]:
-            self.logger.error(f'Transaction error: {data['result']['error']['message']}')
+            self.logger.error('Transaction error: {}'.format(data['result']['error']['message']))
             self.logger.error(f'Transaction details: {data['result']['transaction']}')
             # Handle transaction error as needed
             self.handle_transaction_error(data)
