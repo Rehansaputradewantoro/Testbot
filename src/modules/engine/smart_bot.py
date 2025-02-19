@@ -388,7 +388,7 @@ class SmartBot:
 
                     assets.append(Asset(asset['asset_code'], asset[
                         'asset_issuer']))  # Add the asset and its issuer to the list of trading pairs
-                    self.logger.info(f'Asset found: {asset['asset_code']} - {asset['asset_issuer']} (user\'s balance)')
+                    self.logger.info('Asset found: {} - {} (user\'s balance)'.format(asset['asset_code'], asset['asset_issuer']))
 
                     self.assets=assets
 
