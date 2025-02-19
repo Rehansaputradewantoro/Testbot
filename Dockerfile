@@ -41,4 +41,4 @@ WORKDIR /workspace
 EXPOSE 3000
 EXPOSE 8080
 # Default entrypoint
-CMD ["python3". "stellarbot.py"]
+CMD ["bash"]
