@@ -1182,7 +1182,7 @@ class SmartBot:
         try:
             balance = self.account_info["_embedded"]["records"]
             self.logger.info(f"Balance of {asset_code} on account {self.account_id}: {balance['balance']}")
-            self.server_msg["message"] = f'Balance of {asset_code} on account {self.account_id}: {balance['balance']}'
+            self.server_msg["message"] = 'Balance of {} on account {}: {}'.format(asset_code, self.account_id, balance['balance'])
             return balance["balance"]
         except Exception as e:
             self.logger.error(f"Error fetching asset balance: {e}")
